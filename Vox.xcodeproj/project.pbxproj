@@ -16,7 +16,7 @@
 		3872FA3820379F8300CC26BD /* Vox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3872FA2E20379F8300CC26BD /* Vox.framework */; };
 		3872FA3D20379F8300CC26BD /* VoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3872FA3C20379F8300CC26BD /* VoxTests.swift */; };
 		3872FA3F20379F8300CC26BD /* Vox.h in Headers */ = {isa = PBXBuildFile; fileRef = 3872FA3120379F8300CC26BD /* Vox.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3872FA4A20379FDD00CC26BD /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3872FA4920379FDD00CC26BD /* Context.swift */; };
+		3872FA4A20379FDD00CC26BD /* ContextVox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3872FA4920379FDD00CC26BD /* ContextVox.swift */; };
 		3872FA4D2037A07C00CC26BD /* BaseResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 3872FA4B2037A07C00CC26BD /* BaseResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3872FA4E2037A07C00CC26BD /* BaseResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3872FA4C2037A07C00CC26BD /* BaseResource.m */; };
 		3872FA502037A10800CC26BD /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3872FA4F2037A10800CC26BD /* Resource.swift */; };
@@ -104,7 +104,7 @@
 		3872FA3720379F8300CC26BD /* VoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3872FA3C20379F8300CC26BD /* VoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxTests.swift; sourceTree = "<group>"; };
 		3872FA3E20379F8300CC26BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3872FA4920379FDD00CC26BD /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		3872FA4920379FDD00CC26BD /* ContextVox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextVox.swift; sourceTree = "<group>"; };
 		3872FA4B2037A07C00CC26BD /* BaseResource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseResource.h; sourceTree = "<group>"; };
 		3872FA4C2037A07C00CC26BD /* BaseResource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseResource.m; sourceTree = "<group>"; };
 		3872FA4F2037A10800CC26BD /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
@@ -283,7 +283,7 @@
 			children = (
 				3872FA4B2037A07C00CC26BD /* BaseResource.h */,
 				3872FA4C2037A07C00CC26BD /* BaseResource.m */,
-				3872FA4920379FDD00CC26BD /* Context.swift */,
+				3872FA4920379FDD00CC26BD /* ContextVox.swift */,
 				3821D2692039E51D00AE241E /* Context_Query.swift */,
 				3872FA4F2037A10800CC26BD /* Resource.swift */,
 				38E00D2820390D9200B45B4C /* JSONAPIDecoder.swift */,
@@ -673,7 +673,7 @@
 				38C8189D2042217500B6452C /* FetchPageable.swift in Sources */,
 				38E00CFB2038CEEC00B45B4C /* Document.swift in Sources */,
 				3899555D20430232007E2DE5 /* PaginationStrategy.swift in Sources */,
-				3872FA4A20379FDD00CC26BD /* Context.swift in Sources */,
+				3872FA4A20379FDD00CC26BD /* ContextVox.swift in Sources */,
 				3821D26C2039F64F00AE241E /* ResourcePool.swift in Sources */,
 				38E00D1F20390C2D00B45B4C /* FilterStrategy.swift in Sources */,
 				38E00D1820390C2D00B45B4C /* Deletable.swift in Sources */,
