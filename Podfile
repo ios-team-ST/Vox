@@ -1,7 +1,7 @@
 target 'Vox' do
   use_frameworks!
 
-  pod 'Alamofire', '~> 4.7'
+  pod 'Alamofire', '~> 5.4.3'
 
   target 'VoxTests' do
     inherit! :search_paths

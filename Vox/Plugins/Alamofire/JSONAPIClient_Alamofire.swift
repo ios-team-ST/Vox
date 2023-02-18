@@ -11,7 +11,7 @@ extension JSONAPIClient {
         }
         
         public func executeRequest(path: String, method: String, queryItems: [URLQueryItem], bodyParameters: [String : Any]?, success: @escaping ClientSuccessBlock, failure: @escaping ClientFailureBlock) {
-            let sessionManager = SessionManager.default
+            let sessionManager = Session.default
             let url = baseURL.appendingPathComponent(path)
             let headers: HTTPHeaders = [
                 "Content-Type": "application/vnd.api+json"
@@ -25,16 +25,13 @@ extension JSONAPIClient {
                 .validate(contentType: ["application/vnd.api+json"])
                 .responseData { (dataResponse) in
                     let response = dataResponse.response
-                    let data = dataResponse.data
-                    let error = dataResponse.error
                     
-                    dataResponse
-                        .result
-                        .ifSuccess {
-                            success(response, data)
-                        }
-                        .ifFailure {
-                            failure(error, data)
+                    switch dataResponse.result {
+                    case let .success(data):
+                        success(response, data)
+
+                    case let .failure(error):
+                        failure(error, nil)
                     }
             }
         }
@@ -57,7 +54,7 @@ extension JSONAPIClient {
             compositeRequest?.httpBody = bodyEncoding.httpBody
             
             headers.forEach({ (header) in
-                compositeRequest?.addValue(header.value, forHTTPHeaderField: header.key)
+                compositeRequest?.addValue(header.value, forHTTPHeaderField: header.name)
             })
             
             return compositeRequest!
