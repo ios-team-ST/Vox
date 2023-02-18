@@ -11,9 +11,9 @@ open class Resource: BaseResource {
         return [:]
     }
     
-    private var resourceContext: Context?
+    private var resourceContext: ContextVox?
     private var resourceObject: NSMutableDictionary?
-    weak var context: Context?
+    weak var context: ContextVox?
     weak var object: NSMutableDictionary?
     
     public var id: String?
@@ -49,11 +49,11 @@ open class Resource: BaseResource {
         return _relationships
     }
     
-    public required init(context: Context? = nil) {
+    public required init(context: ContextVox? = nil) {
         super.init()
 
         if context == nil {
-            let _context = Context(dictionary: NSMutableDictionary())
+            let _context = ContextVox(dictionary: NSMutableDictionary())
             let _object = NSMutableDictionary()
             self.resourceContext = _context
             self.resourceObject = _object
@@ -105,7 +105,7 @@ open class Resource: BaseResource {
         return data
     }
     
-    func reassignContext(_ context: Context) {
+    func reassignContext(_ context: ContextVox) {
         self.context = context
         self.resourceContext = context
     }

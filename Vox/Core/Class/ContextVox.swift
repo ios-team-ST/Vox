@@ -1,6 +1,6 @@
 import Foundation
 
-public class Context: NSObject {
+public class ContextVox: NSObject {
     private static var classes: [String: Resource.Type] = [:]
     
     let dictionary: NSMutableDictionary
@@ -76,7 +76,7 @@ public class Context: NSObject {
     }
     
     func resourceClass(for type: String) -> Resource.Type? {
-        guard let resourceClass = Context.classes[type] else { return nil }
+        guard let resourceClass = ContextVox.classes[type] else { return nil }
         
         return resourceClass
     }
