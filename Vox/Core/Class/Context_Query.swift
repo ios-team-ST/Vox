@@ -1,6 +1,6 @@
 import Foundation
 
-extension Context {
+extension ContextVox {
     func value(forKey key: String, inResource resource: Resource) -> Any? {
         var value: Any?
         

@@ -71,7 +71,7 @@
             class_replaceMethod(resourceClass, setter, (IMP)setValue, attrs);
         }
         
-        [Context registerClass:resourceClass];
+        [ContextVox registerClass:resourceClass];
         
         free(properties);
     }

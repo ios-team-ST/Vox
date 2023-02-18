@@ -13,7 +13,7 @@ class JSONAPIDecoder {
         let links    = jsonObject["links"] as? [String: Any]
         let included = jsonObject["included"] as? [[String: Any]]
         
-        let context = Context(dictionary: jsonObject)
+        let context = ContextVox(dictionary: jsonObject)
         
         let dataType = context.dataType()
         

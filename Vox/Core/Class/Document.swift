@@ -11,7 +11,7 @@ public class Document<DataType> {
     
     public internal(set) var included: [[String: Any]]?
     
-    let context: Context
+    let context: ContextVox
     weak var client: Client?
     
     init(
@@ -20,7 +20,7 @@ public class Document<DataType> {
         jsonapi: [String: Any]?,
         links: [String: Any]?,
         included: [[String: Any]]?,
-        context: Context
+        context: ContextVox
     ) {
         self.data = data
         self.meta = meta

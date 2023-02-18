@@ -1,24 +1,25 @@
 PODS:
-  - Alamofire (4.7.0)
+  - Alamofire (5.4.4)
   - Nimble (7.0.3)
   - Quick (1.2.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.7)
+  - Alamofire (~> 5.4.3)
   - Nimble
   - Quick
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - Alamofire
     - Nimble
     - Quick
+  trunk:
+    - Alamofire
 
 SPEC CHECKSUMS:
-  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
 
-PODFILE CHECKSUM: d6370329bd52b0306d7c72b4a2cf75a0248944c9
+PODFILE CHECKSUM: 1bbd240f9de0b55682cf1e615a59d9d2e30225f9
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.11.3

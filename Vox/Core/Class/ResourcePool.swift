@@ -26,7 +26,7 @@ class ResourcePool {
         return value
     }
     
-    func reassignContext(_ context: Context) {
+    func reassignContext(_ context: ContextVox) {
         queue.async(flags: .barrier) {
             let newMapTable = NSMapTable<NSString, Resource>(keyOptions: [.strongMemory], valueOptions: [.weakMemory], capacity: self.mapTable.count)
         
