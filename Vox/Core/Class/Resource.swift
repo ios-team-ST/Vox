@@ -159,3 +159,11 @@ extension Array where Element: Resource {
         return data
     }
 }
+
+// MARK: - Helper for Clients
+
+public extension Resource {
+    func getContextAndObject() -> (context: ContextVox?, object: NSMutableDictionary?) {
+        (context, object)
+    }
+}
